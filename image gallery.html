@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image-gallery - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="full-image" id="fullimage">
+         <span onclick="closefull-image()">x</span>
+     </div>
+    <div class="img-gallery">
+        <div class="container1">
+        <img src="image1.jpg"onclick= "openfullimage(this.src)">
+        </div>
+        <div class="container1"></div>
+        <img src="image2.jpg"onclick= "openfullimage(this.src)">
+        </div>
+        <img src="image3.jpg"onclick= "openfullimage(this.src)">
+        <img src="image4.jpg"onclick= "openfullimage(this.src)">
+        <img src="image5.jpg"onclick= "openfullimage(this.src)">
+        <img src="image6.jpg"onclick= "openfullimage(this.src)">
+        <img src="image7.jpg"onclick= "openfullimage(this.src)">
+        <img src="image8.jpg"onclick= "openfullimage(this.src)">
+    </div>
+
+<script>
+
+    var fullimageBox = document.getElementById("fullimageBox");
+    var fullimage = document.getElementById("fullimage");
+
+    function openfullimage(pic){
+      fullimageBox.style.display = "flex";
+      fullimage.scr = pic;
+    }  
+
+    function closefullimage(){
+      fullimageBox.style.display = "none";
+    }
+
+</script>
+</body>
+</html>
